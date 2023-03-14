@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "irfgyak4_gsqrbp", "irfgyak4_gsqrbp\irfgyak4_gsqrbp.csproj", "{18A2F83C-D411-4F7A-824A-F937B5ED168C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18A2F83C-D411-4F7A-824A-F937B5ED168C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18A2F83C-D411-4F7A-824A-F937B5ED168C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18A2F83C-D411-4F7A-824A-F937B5ED168C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18A2F83C-D411-4F7A-824A-F937B5ED168C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A50302C-025B-45E9-A3CE-CDF4C937E94A}
+	EndGlobalSection
+EndGlobal
