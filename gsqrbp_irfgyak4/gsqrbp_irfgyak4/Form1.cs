@@ -67,6 +67,22 @@ namespace gsqrbp_irfgyak4
                 "Ár (mFt)",
                 "Négyzetméter ár (Ft/m2)"
             };
+
+            object[,] values = new object[Flats.Count, headers.Length];
+            int counter = 0;
+            foreach(Flat f in Flats)
+            {
+                values[counter, 0] = f.Code;
+                values[counter, 1] = f.Vendor;
+                values[counter, 2] = f.Side;
+                values[counter, 3] = f.District;
+                values[counter, 4] = f.Elevator;
+                values[counter, 5] = f.Elevator;
+                values[counter, 6] = f.NumberOfRooms;
+                values[counter, 7] = f.FloorArea;
+                values[counter, 8] = f.Price;
+                counter++;
+            };
         }
     }
 }
