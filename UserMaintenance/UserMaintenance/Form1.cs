@@ -18,7 +18,7 @@ namespace UserMaintenance
         {
             InitializeComponent();
 
-            lblLastName.Text = Resource1.LastName;
+            lblLastName.Text = Resource1.FullName;
             lblFirstName.Text = Resource1.FirstName;
             btnAdd.Text = Resource1.Add;
 
