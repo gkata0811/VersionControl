@@ -32,7 +32,7 @@ namespace gsqrbp_irfgyak4
                 xlApp = new Excel.Application();
                 xlWB = xlApp.Workbooks.Add(Missing.Value);
                 xlSheet = xlWB.ActiveSheet;
-                //CreateTable();
+                CreateTable();
                 xlApp.Visible = true;
                 xlApp.UserControl = true;
 
@@ -51,6 +51,22 @@ namespace gsqrbp_irfgyak4
         private void LoadData()
         {
             Flats = context.Flats.ToList();
+        }
+
+        private void CreateTable()
+        {
+            string[] headers = new string[]
+            {
+                "Kód",
+                "Eladó",
+                "Oldal",
+                "Kerület",
+                "Lift",
+                "Szobák száma",
+                "Alapterület (m2)",
+                "Ár (mFt)",
+                "Négyzetméter ár (Ft/m2)"
+            };
         }
     }
 }
