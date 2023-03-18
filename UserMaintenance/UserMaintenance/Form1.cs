@@ -21,6 +21,7 @@ namespace UserMaintenance
             lblFullName.Text = Resource1.FullName;
             btnAdd.Text = Resource1.Add;
             btnFajlbaIras.Text = Resource1.FajlbaIras;
+            btnDelete.Text = Resource1.Delete;
 
             listBoxUsers.DataSource = users;
             listBoxUsers.ValueMember = "ID";
@@ -37,6 +38,11 @@ namespace UserMaintenance
         }
 
         private void btnFajlbaIras_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
         {
 
         }
