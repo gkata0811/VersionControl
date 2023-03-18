@@ -22,9 +22,9 @@ namespace UserMaintenance
             lblFirstName.Text = Resource1.FirstName;
             btnAdd.Text = Resource1.Add;
 
-            listUsers.DataSource = users;
-            listUsers.ValueMember = "ID";
-            listUsers.DisplayMember = "FullName";
+            listBoxUsers.DataSource = users;
+            listBoxUsers.ValueMember = "ID";
+            listBoxUsers.DisplayMember = "FullName";
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
