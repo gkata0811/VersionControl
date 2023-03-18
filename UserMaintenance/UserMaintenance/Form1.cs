@@ -20,6 +20,7 @@ namespace UserMaintenance
 
             lblFullName.Text = Resource1.FullName;
             btnAdd.Text = Resource1.Add;
+            btnFajlbaIras.Text = Resource1.FajlbaIras;
 
             listBoxUsers.DataSource = users;
             listBoxUsers.ValueMember = "ID";
@@ -33,6 +34,11 @@ namespace UserMaintenance
                 FullName = txtFullName.Text
             };
             users.Add(u);
+        }
+
+        private void btnFajlbaIras_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
