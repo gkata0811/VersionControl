@@ -77,10 +77,10 @@ namespace gsqrbp_irfgyak4
                 values[counter, 2] = f.Side;
                 values[counter, 3] = f.District;
                 values[counter, 4] = f.Elevator;
-                values[counter, 5] = f.Elevator;
-                values[counter, 6] = f.NumberOfRooms;
-                values[counter, 7] = f.FloorArea;
-                values[counter, 8] = f.Price;
+                values[counter, 5] = f.NumberOfRooms;
+                values[counter, 6] = f.FloorArea;
+                values[counter, 7] = f.Price;
+                values[counter, 8] = "";
                 counter++;
             };
         }
