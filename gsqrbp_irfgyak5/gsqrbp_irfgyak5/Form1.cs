@@ -19,6 +19,12 @@ namespace gsqrbp_irfgyak5
         {
             InitializeComponent();
 
+            ExchangeRates();
+            dgvRates.DataSource = Rates.ToList();
+        }
+
+        private void ExchangeRates()
+        {
             var mnbService = new MNBArfolyamServiceSoapClient();
             var request = new GetExchangeRatesRequestBody()
             {
@@ -28,7 +34,6 @@ namespace gsqrbp_irfgyak5
             };
             var response = mnbService.GetExchangeRates(request);
             var result = response.GetExchangeRatesResult;
-            dgvRates.DataSource = Rates.ToList();
         }
     }
 }
