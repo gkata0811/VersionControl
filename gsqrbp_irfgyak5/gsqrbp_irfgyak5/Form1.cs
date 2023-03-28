@@ -13,6 +13,8 @@ namespace gsqrbp_irfgyak5
 {
     public partial class Form1 : Form
     {
+        BindingList<Entities.RateData> Rates = new BindingList<Entities.RateData>();
+        
         public Form1()
         {
             InitializeComponent();
@@ -26,6 +28,7 @@ namespace gsqrbp_irfgyak5
             };
             var response = mnbService.GetExchangeRates(request);
             var result = response.GetExchangeRatesResult;
+            dgvRates.DataSource = Rates.ToList();
         }
     }
 }

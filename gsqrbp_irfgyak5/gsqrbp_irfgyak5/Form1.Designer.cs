@@ -30,12 +30,42 @@ namespace gsqrbp_irfgyak5
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.dgvRates = new System.Windows.Forms.DataGridView();
+            this.rateDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRates)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rateDataBindingSource)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dgvRates
+            // 
+            this.dgvRates.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRates.Location = new System.Drawing.Point(12, 12);
+            this.dgvRates.Name = "dgvRates";
+            this.dgvRates.Size = new System.Drawing.Size(509, 244);
+            this.dgvRates.TabIndex = 0;
+            // 
+            // rateDataBindingSource
+            // 
+            this.rateDataBindingSource.DataSource = typeof(gsqrbp_irfgyak5.Entities.RateData);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(533, 268);
+            this.Controls.Add(this.dgvRates);
+            this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRates)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rateDataBindingSource)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dgvRates;
+        private System.Windows.Forms.BindingSource rateDataBindingSource;
     }
 }
 
