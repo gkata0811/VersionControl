@@ -21,7 +21,7 @@ namespace gsqrbp_irfgyak5
         {
             InitializeComponent();
 
-            dgvRates.DataSource = Rates.ToList();
+            dgvRates.DataSource = Rates;
             XmlDocument(ExchangeRates());
             Chart();
         }
