@@ -21,11 +21,12 @@ namespace gsqrbp_irfgyak5
         {
             InitializeComponent();
 
-            RefreshData();
             dgvRates.DataSource = Rates.ToList();
+            XmlDocument(ExchangeRates());
+            Chart();
         }
 
-        private void ExchangeRates()
+        private string ExchangeRates()
         {
             var mnbService = new MNBArfolyamServiceSoapClient();
             var request = new GetExchangeRatesRequestBody()
@@ -36,7 +37,12 @@ namespace gsqrbp_irfgyak5
             };
             var response = mnbService.GetExchangeRates(request);
             var result = response.GetExchangeRatesResult;
+            return result;
+            //richTextBox1.Text = result;
+        }
 
+        private void XmlDocument(string result)
+        {
             var xml = new XmlDocument();
             xml.LoadXml(result);
             foreach (XmlElement element in xml.DocumentElement)
@@ -71,24 +77,22 @@ namespace gsqrbp_irfgyak5
 
         private void RefreshData()
         {
-            Rates.Clear();
-            ExchangeRates();
-            Chart();
+            //Rates.Clear();
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            RefreshData();
+            //RefreshData();
         }
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
-            RefreshData();
+            //RefreshData();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            RefreshData();
+            //RefreshData();
         }
     }
 }
