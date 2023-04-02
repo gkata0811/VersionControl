@@ -61,7 +61,10 @@ namespace gsqrbp_irfgyak6
 
         private void btnSelectBall_Click(object sender, EventArgs e)
         {
-            Factory = new Entities.BallFactory();
+            Factory = new Entities.BallFactory
+            {
+                BallColor = btnColor.BackColor
+            };
         }
 
         private void DisplayNext()
