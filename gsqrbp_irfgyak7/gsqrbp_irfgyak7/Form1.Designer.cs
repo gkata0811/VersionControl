@@ -29,13 +29,34 @@ namespace gsqrbp_irfgyak7
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.dgvTicks = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTicks)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dgvTicks
+            // 
+            this.dgvTicks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTicks.Location = new System.Drawing.Point(12, 12);
+            this.dgvTicks.Name = "dgvTicks";
+            this.dgvTicks.Size = new System.Drawing.Size(494, 303);
+            this.dgvTicks.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgvTicks);
+            this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTicks)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dgvTicks;
     }
 }
 
