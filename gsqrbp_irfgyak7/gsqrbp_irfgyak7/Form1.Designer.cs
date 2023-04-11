@@ -30,7 +30,9 @@ namespace gsqrbp_irfgyak7
         private void InitializeComponent()
         {
             this.dgvTicks = new System.Windows.Forms.DataGridView();
+            this.dgvPortfolio = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTicks)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPortfolio)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvTicks
@@ -38,18 +40,28 @@ namespace gsqrbp_irfgyak7
             this.dgvTicks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTicks.Location = new System.Drawing.Point(12, 12);
             this.dgvTicks.Name = "dgvTicks";
-            this.dgvTicks.Size = new System.Drawing.Size(494, 303);
+            this.dgvTicks.Size = new System.Drawing.Size(381, 303);
             this.dgvTicks.TabIndex = 0;
+            // 
+            // dgvPortfolio
+            // 
+            this.dgvPortfolio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPortfolio.Location = new System.Drawing.Point(415, 12);
+            this.dgvPortfolio.Name = "dgvPortfolio";
+            this.dgvPortfolio.Size = new System.Drawing.Size(373, 303);
+            this.dgvPortfolio.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgvPortfolio);
             this.Controls.Add(this.dgvTicks);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dgvTicks)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPortfolio)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -57,6 +69,7 @@ namespace gsqrbp_irfgyak7
         #endregion
 
         private System.Windows.Forms.DataGridView dgvTicks;
+        private System.Windows.Forms.DataGridView dgvPortfolio;
     }
 }
 
